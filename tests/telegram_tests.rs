@@ -145,6 +145,7 @@ async fn test_telegram_real_api_integration() {
     let token = std::env::var("TELEGRAM_TOKEN_TEST").unwrap_or_else(|_| {
         panic!("Set TELEGRAM_TOKEN_TEST environment variable to run integration tests")
     });
+
     let chat_id = std::env::var("CHAT_ID_TEST").unwrap_or_else(|_| {
         panic!("Set CHAT_ID_TEST environment variable to run integration tests")
     });

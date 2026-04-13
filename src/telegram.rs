@@ -3,7 +3,7 @@ use std::collections::HashMap;
 use thiserror::Error;
 
 /// Error types for Telegram operations
-#[derive(Error, Debug)]
+#[derive(Error, Debug)] 
 pub enum TelegramError {
     /// Error when parsing URL
     #[error("Failed to parse URL: {0}")]
