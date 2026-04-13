@@ -1,5 +1,5 @@
 [package]
-name = "aws_billing_notifier"
+name = "aws-billing-notifier"
 version = "0.1.0"
 edition = "2021"
 

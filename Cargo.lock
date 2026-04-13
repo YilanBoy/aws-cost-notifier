@@ -71,6 +71,24 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
 
 [[package]]
+name = "aws-billing-notifier"
+version = "0.1.0"
+dependencies = [
+ "aws-config",
+ "aws-sdk-costexplorer",
+ "aws-sdk-sts",
+ "chrono",
+ "lambda_runtime",
+ "reqwest",
+ "serde_json",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "url",
+ "wiremock",
+]
+
+[[package]]
 name = "aws-config"
 version = "1.8.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -457,24 +475,6 @@ dependencies = [
  "aws-smithy-types",
  "rustc_version",
  "tracing",
-]
-
-[[package]]
-name = "aws_billing_notifier"
-version = "0.1.0"
-dependencies = [
- "aws-config",
- "aws-sdk-costexplorer",
- "aws-sdk-sts",
- "chrono",
- "lambda_runtime",
- "reqwest",
- "serde_json",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "url",
- "wiremock",
 ]
 
 [[package]]
